@@ -1,0 +1,15 @@
+05-16 14:12:15.880 127.0.0.1:54323       93283  FJ-1-5    WARN: _train: Dataset used may contain fewer number of rows due to removal of rows with NA/missing values.  If this is not desirable, set impute_missing argument in pca call to TRUE/True/true/... depending on the client language.
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: java.lang.IllegalArgumentException: Error during sampling - too few points?
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at water.util.MRUtils.sampleFrameStratified(MRUtils.java:224)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at hex.deeplearning.DeepLearning$DeepLearningDriver.trainModel(DeepLearning.java:366)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at hex.deeplearning.DeepLearning$DeepLearningDriver.buildModel(DeepLearning.java:306)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at hex.deeplearning.DeepLearning$DeepLearningDriver.computeImpl(DeepLearning.java:211)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at hex.ModelBuilder$Driver.compute2(ModelBuilder.java:169)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at hex.deeplearning.DeepLearning$DeepLearningDriver.compute2(DeepLearning.java:204)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1241)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+05-16 14:36:13.682 127.0.0.1:54323       93283  FJ-1-5    ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+05-16 14:56:57.331 127.0.0.1:54323       93883  FJ-1-5    WARN: _train: Dataset used may contain fewer number of rows due to removal of rows with NA/missing values.  If this is not desirable, set impute_missing argument in pca call to TRUE/True/true/... depending on the client language.
